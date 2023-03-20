@@ -10,7 +10,6 @@ vimeoPlayer.on(
   'timeupdate',
   throttle(event => {
     localStorage.setItem(LOCALSTORAGE_KEY, event.seconds);
-    // console.log(localStorage.setItem(LOCALSTORAGE_KEY, event.seconds));
   }, 1000)
 );
 
