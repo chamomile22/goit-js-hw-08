@@ -16,7 +16,7 @@ vimeoPlayer.on(
 function setTimeFromLocalStorage() {
   const seconds = localStorage.getItem(LOCALSTORAGE_KEY);
   if (seconds) {
-    vimeoPlayer.setCurrentTime(localStorage.getItem(LOCALSTORAGE_KEY));
+    vimeoPlayer.setCurrentTime(seconds);
   }
 }
 
