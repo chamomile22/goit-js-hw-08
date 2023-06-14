@@ -33,7 +33,6 @@ function handleFormSubmit(event) {
 
   const submittedInfo = JSON.parse(localStorage.getItem(LOCALSTORAGE_KEY));
   console.log(submittedInfo);
-  // console.log(`${}`);
   event.currentTarget.reset();
   localStorage.removeItem(LOCALSTORAGE_KEY);
 }
